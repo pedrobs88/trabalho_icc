@@ -1,0 +1,151 @@
+/* Seção de reforço do reset das fontes */
+td, h1, h2, h3, h4 {
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* Fim da seção de reset das fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Ubuntu:wght@400;700&display=swap');
+
+/* Blocos do site */
+body {
+    background-image: url("../img/pattern.png");
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#center {
+    margin: auto;
+    width: 40%;
+    background-color: #ffffff;
+}
+
+#top {
+    text-align: center;
+}
+
+.img-center {
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+/* Fim dos blocos do site*/
+
+
+
+/* Seção de tabelas dos comandos Git */
+.command {
+    font-weight: bold;
+    width: 10%;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    font-size: 1.2em;
+    margin-bottom: 3em;
+}
+
+table td {
+    padding: .8em;
+}
+
+table tr {
+    border-bottom: solid black 0.1em;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+/* Fim da seção de tabelas do Git */
+
+
+
+/* Seção de uso do GitHub */
+#github {
+    border-top: solid black;
+}
+
+.align-center {
+    margin: auto;
+    width: 80%;
+}
+
+ol {
+    counter-reset: li-counter;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 4em;
+}
+  
+ol li {
+    counter-increment: li-counter;
+}
+  
+ol li::before {
+    content: counter(li-counter);
+    color: #ffffff;
+    font-weight: bold;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    padding: 4px;
+    margin: 10px;
+}
+
+.section-title {
+    font-size: 1.8em;
+}
+
+.section-title::before {
+    content: "\2731";
+    margin-right: .2em;
+    color: rgb(48, 48, 48);
+}
+/* Fim da seção de uso do GitHub */
+
+
+
+/* Seção de tags gerais */
+b, h1 {
+    font-weight: bold;
+}
+
+small {
+    font-size: 1em;
+    text-align: center;
+}
+
+i {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+mark {
+    transition: .3s;
+    padding: .1em .2em .1em .2em;
+}
+
+mark:hover {
+    background-color: #f35535;
+    transition: .3s;
+}
+
+.external-links {
+    text-decoration: none;
+    color: #f35535;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.external-links:hover {
+    color: red;
+}
+/* Fim da seção de tags gerais */
