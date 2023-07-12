@@ -10,7 +10,7 @@ td, h1, h2, h3, h4 {
 
 /* Blocos do site */
 body {
-    background-image: url("../img/pattern.png");
+    background-color: rgb(93, 93, 93);
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -149,7 +149,7 @@ b, h1 {
 }
 
 small {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -186,3 +186,43 @@ mark:hover {
     width: 80%;
 }
 /* Fim da seção de tags gerais */
+
+
+
+/* Seção da barra de navegação */
+#navbar ul {
+    overflow: hidden;
+    background-color: black;
+    margin-bottom: 3em;
+}
+  
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #d4482c;
+}
+
+.active {
+    background-color: #d4482c;
+}
+/* Fim da seção da barra de navegação */
+
+
+
+/* Seção do footer */
+footer {
+    background-color: black;
+    padding: 1.5em;
+    color: white;
+}
+/* Fim da seção do footer */
