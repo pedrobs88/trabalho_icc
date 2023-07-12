@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Projeto Prático - ICC - Home</title>
+        <title>Projeto Prático - ICC - Vídeo</title>
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>Olá, mundo</h1>
+        <div id="center">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active"  href="video.html">Vídeo</a></li>
+                    <li><a href="audio.html">Áudio</a></li>
+                  </ul> 
+            </nav>
+
+            <div id="top">
+                <h1>Vídeo explicativo sobre Git</h1>
+            </div>
+
+            <video width="600" height="420" controls>
+                <source src="videoexemplo.mp4" type="video/mp4">
+            </video>
+
+            <footer>
+                <small><p>Este é um projeto pessoal e não tem o intuito de substituir a documentação original das tecnologias supracitadas. Para melhores informações, acesse o site do <a class="external-links" href="https://git-scm.com" target="_blank">Git</a> e do <a  class="external-links" href="https://github.com" target="_blank">GitHub</a> e saiba mais.</p></small>
+            </footer>
+        </div>
     </body>
 </html>
