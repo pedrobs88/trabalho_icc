@@ -18,95 +18,265 @@
                     <tbody> 
                         <tr> 
                             <td class="command">init</td>
-                            <td>Cria um repositório <i>Git</i> vazio ou reutiliza um já existente.</td>   
+                            <td>
+                                Cria um repositório <i>Git</i> vazio ou reutiliza um já existente.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <code>git init</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">clone</td>
-                            <td>Clona um repositório em um novo diretório.</td>   
+                            <td>
+                                Clona um repositório em um novo diretório.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <code>git clone &lt;URL&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">branch</td>
-                            <td>Lista, cria ou remove <i>branches</i>.</td>   
+                            <td>
+                                Lista, cria ou remove <i>branches</i>.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Lista todas as <i>branches</i> no repositório:</p>
+                                    <code>git branch</code>
+                                    <p class="comment">Cria uma nova <i>branch</i> chamada &lt;branch-name&gt;:</p>
+                                    <code>git branch branch-name</code>
+                                    <p class="comment">Exclui a <i>branch</i> chamada &lt;branch-name&gt;:</p>
+                                    <code>git branch -d branch-name</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">checkout</td>
-                            <td>Troca <i>branches</i> ou restaura arquivos da <i>Working Tree</i>.</td>   
+                            <td>
+                                Troca <i>branches</i> ou restaura arquivos da <i>Working Tree</i>.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Alterna para a <i>branch</i> chamada &lt;branch-name&gt;:</p>
+                                    <code>git checkout branch-name</code>
+                                    <p class="comment">Descarta as alterações não <i>commitadas</i> no &lt;arquivo&gt;:</p>
+                                    <code>git checkout -- &lt;arquivo&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">status</td>
-                            <td>Mostra o status da <i>Working Tree</i>.</td>   
+                            <td>
+                                Mostra o status da <i>Working Tree</i>.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <code>git status</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">diff</td>
-                            <td>Mostra a diferença entre <i>commits</i>, arquivos, <i>branches</i> e a <i>Working Tree</i>.</td>   
+                            <td>
+                                Mostra a diferença entre <i>commits</i>, arquivos, <i>branches</i> e a <i>Working Tree</i>.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Mostra as diferenças entre o diretório de trabalho e o índice <i>(staging area)</i>:</p>
+                                    <code>git diff</code>
+                                    <p class="comment">Mostra as diferenças entre dois <i>commits</i>:</p>
+                                    <code>git diff commitA commitB</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">add</td>
-                            <td>Adiciona os conteúdos do arquivo para o <i>index (staging area)</i>.</td>   
+                            <td>
+                                Adiciona os conteúdos do arquivo para o <i>index (staging area)</i>.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Adiciona o &lt;arquivo&gt; ao índice:</p>
+                                    <code>git add &lt;arquivo&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">commit</td>
-                            <td>Registra alterações no repositório.</td>   
+                            <td>
+                                Registra alterações no repositório.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Grava as alterações com uma mensagem de <i>commit</i>:</p>
+                                    <code>git commit -m "Mensagem de commit"</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">push</td>
-                            <td>Envia alterações locais para um repositório remoto.</td>   
+                            <td>
+                                Envia alterações locais para um repositório remoto.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Envia as alterações da <i>branch</i> atual para o repositório remoto chamado &lt;origin&gt;:</p>
+                                    <code>git push &lt;origin&gt; &lt;branch&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">pull</td>
-                            <td>Busca e integra com outro repositório ou uma branch local.</td>   
+                            <td>
+                                Busca e integra com outro repositório ou uma branch local.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Obtém as alterações da <i>branch</i> &lt;minha-branch&gt; do repositório remoto &lt;origin&gt;:</p>
+                                    <code>git pull &lt;origin&gt; &lt;minha-branch&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">revert</td>
-                            <td>Reverte algumas <i>commits</i> existentes.</td>   
+                            <td>
+                                Reverte alguns <i>commits</i> existentes.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Reverte as alterações pro 3° último <i>commit</i> realizado:</p>
+                                    <code>git revert HEAD~3</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">merge</td>
-                            <td>Combina alterações de diferentes <i>branches</i>.</td>   
+                            <td>
+                                Combina alterações de diferentes <i>branches</i>.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Combina as alterações da <i>branch</i> &lt;outra-branch&gt; na <i>branch</i> atual:</p>
+                                    <code>git merge &lt;outra-branch&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">stash</td>
-                            <td>Guarda as alterações em um diretório de trabalho.</td>   
+                            <td>
+                                Guarda as alterações em um diretório de trabalho.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <code>git stash</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">rm</td>
-                            <td>Remove arquivos da <i>Working Tree</i> e do <i>index (staging area)</i>.</td>   
+                            <td>
+                                Remove arquivos da <i>Working Tree</i> e do <i>index (staging area)</i>.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Remove o &lt;arquivo&gt;:</p>
+                                    <code>git rm &lt;arquivo&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">config</td>
-                            <td>Configura opções globais ou do repositório.</td>   
+                            <td>
+                                Configura opções globais ou do repositório.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Define o nome do usuário globalmente:</p>
+                                    <code>git config --global user.name "Seu Nome"</code>
+                                    <p class="comment">Define o e-mail do usuário globalmente:</p>
+                                    <code>git config --global user.email "seuemail@example.com"</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">reset</td>
-                            <td>Retorna a <i>HEAD</i> atual para o estado especificado.</td>   
+                            <td>
+                                Retorna a <i>HEAD</i> atual para o estado especificado.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Desfazendo um <i>commit</i> que não foi <i>pushed</i> para o último estado da HEAD:</p>
+                                    <code>git reset --soft HEAD^</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">remote</td>
-                            <td>Gerencia repositórios remotos.</td>   
+                            <td>
+                                Gerencia repositórios remotos.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Adiciona um repositório remoto chamado &lt;origin&gt; com a &lt;URL&gt; especificada:</p>
+                                    <code>git remote add &lt;origin&gt; &lt;URL&gt;</code>
+                                    <p class="comment">Lista os repositórios remotos configurados:</p>
+                                    <code>git remote -v</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">fetch</td>
-                            <td>Obtém <i>branches</i> e/ou tags de um ou mais repositórios.</td>   
+                            <td>
+                                Obtém <i>branches</i> e/ou tags de um ou mais repositórios.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Obtendo <i>branches</i> do repositório &lt;origin&gt;:</p>
+                                    <code>git fetch &lt;origin&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">show</td>
-                            <td>Mostra um ou mais objetos (<i>tags</i>, <i>commits</i>, etc).</td>   
+                            <td>
+                                Mostra um ou mais objetos (<i>tags</i>, <i>commits</i>, etc).
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Mostrando a tag &lt;v1.0.0&gt;:</p>
+                                    <code>git show &lt;v1.0.0&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">help</td>
-                            <td>Mostra informação de ajuda sobre o <i>Git</i>.</td>   
+                            <td>
+                                Mostra informação de ajuda sobre o <i>Git</i>.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <code>git help</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">rebase</td>
-                            <td>Reaplica <i>commits</i> em cima de outra base.</td>   
+                            <td>
+                                Reaplica <i>commits</i> em cima de outra base.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Aplica as alterações da &lt;outra-branch&gt; na <i>branch</i> atual:</p>
+                                    <code>git rebase &lt;outra-branch&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">blame</td>
-                            <td>Mostra qual alteração e autor modificou cada linha de código pela última vez.</td>   
+                            <td>
+                                Mostra qual alteração e autor modificou cada linha de código pela última vez.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Mostrando as alterações realizadas no arquivo &lt;arquivo&gt;:</p>
+                                    <code>git blame &lt;arquivo&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                         <tr> 
                             <td class="command">tag</td>
-                            <td>Cria, lista, apaga ou verifica uma tag.</td>   
+                            <td>
+                                Cria, lista, apaga ou verifica uma tag.
+                                <h3 class="example">Exemplo ▼</h3>
+                                <div class="hide">
+                                    <p class="comment">Criando uma tag não assinada com o nome &lt;tagname&gt;:</p>
+                                    <code>git tag -s &lt;tagname&gt;</code>
+                                    <p class="comment">Removendo a tag com o nome &lt;tagname&gt;:</p>
+                                    <code>git tag -d &lt;tagname&gt;</code>
+                                </div>
+                            </td>   
                         </tr>
                     </tbody> 
                 </table>
@@ -123,20 +293,20 @@
                         <li>No campo "Repository name", digite o &lt;nome_do_repo&gt;.</li>
                         <li>No campo "Description", digite uma pequena descrição.</li>
                         <li>Selecione se seu repositório será <b>Público</b> ou <b>Privado</b>.</li>
-                        <li>No campo "Repository name", digite o &lt;nome_do_repo&gt;.</li>
-                        <li>No campo "Repository name", digite o &lt;nome_do_repo&gt;.</li>
+                        <li>Selecione "<b><i>Add a README file</i></b>".</li>
+                        <li>Clique em "<b><i>Create repository</i></b>".</li>
                     </ol>
 
                     <h3 class="section-title">Criando uma branch:</h3>
                     <ol>
-                        <li>Clique na aba "Code" do seu repositório &lt;nome_do_repo&gt;.</li>
+                        <li>Clique na aba "<b>Code</b>" do seu repositório &lt;nome_do_repo&gt;.</li>
                         <li>
                             Acima da lista de arquivos, clique no menu suspenso que diz "<i>main</i>".
-                            <img class="img-center" src="https://docs.github.com/assets/cb-39465/mw-1440/images/help/branches/branch-selection-dropdown.webp">
+                            <img class="img-center img-size-increase" src="https://docs.github.com/assets/cb-39465/mw-1440/images/help/branches/branch-selection-dropdown.webp">
                         </li>
                         <li>No campo de texto, digite o nome da <i>branch</i>, por exemplo, &lt;readme-edits&gt;.</li>
                         <li>
-                            Clique em "<i>Create branch: readme-edits from main</i>".
+                            Clique em "<b><i>Create branch: readme-edits from main</i></b>".
                             <img class="img-center" src="https://docs.github.com/assets/cb-31026/mw-1440/images/help/repository/new-branch.webp">
                         </li>
                     </ol>
@@ -146,13 +316,29 @@
                         <li>Na <i>branch</i> &lt;readme-edits&gt; criada anteriormente, clique no arquivo <i>README.md</i>.</li>
                         <li>Para editar o arquivo, clique no ícone de lápis.</li>
                         <li>No editor, escreva o conteúdo do arquivo.</li>
-                        <li>Clique em "<i>Commit changes...</i>".</li>
-                        <li>No campo "<i>Propose changes</i>", escreva uma mensagem de <i>commit</i> que descreva suas alterações.</li>
-                        <li>Clique em "<i>Propose changes</i>".</li>
+                        <li>Clique em "<b><i>Commit changes...</i></b>".</li>
+                        <li>No campo "<b><i>Propose changes</i></b>", escreva uma mensagem de <i>commit</i> que descreva suas alterações.</li>
+                        <li>Clique em "<b><i>Propose changes</i></b>".</li>
                     </ol>
                 </div>
             </div>
             <small><p>Este é um projeto pessoal e não tem o intuito de substituir a documentação original das tecnologias supracitadas. Para melhores informações, acesse o site do <a class="external-links" href="https://git-scm.com" target="_blank">Git</a> e do <a  class="external-links" href="https://github.com" target="_blank">GitHub</a> e saiba mais.</p></small>
         </div>
+        <script>
+            // Trecho de código simples que implementa o toggle do botão de exemplo nos comandos Git
+            let elementos = document.getElementsByClassName("example");
+            for (let i = 0; i < elementos.length; i++){
+                elementos[i].addEventListener("click", function(e) {
+                    let code = elementos[i].parentElement.getElementsByTagName("div")[0];
+                    if (!code.classList.contains("hide")){
+                        code.classList.add("hide");
+                        elementos[i].innerHTML = "Exemplo ▼";
+                    } else {
+                        code.classList.remove("hide");
+                        elementos[i].innerHTML = "Exemplo ▲";
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
