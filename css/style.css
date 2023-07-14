@@ -16,12 +16,13 @@ body {
 
 #center {
     margin: auto;
-    width: 40%;
+    width: 70%;
     background-color: #ffffff;
 }
 
 #top {
     text-align: center;
+    margin-bottom: .25em;
 }
 
 .img-center {
